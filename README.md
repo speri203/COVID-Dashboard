@@ -42,23 +42,23 @@ The total size of exported data is ~ 40 mb and contain 733488 rows.
 
 ---
 
-![screenshots/Confirmed_Cases_by_Date.png](screenshots/Confirmed_Cases_by_Date.png)
+![Confirmed Cases by Date](Screenshots/Confirmed_Cases_by_Date.png)
 
 The map above illustrates the number of cases, deaths, and mortality rate (death/cases * 100) at the state level. The granularity can also be changed to county level, but this gives a better overall picture. The colors of the states are based on mortality rate. The highest mortality rates are concentrated to the north-east quadrant of the United States with Connecticut, New Jersey, and new York having the largest mortality rates. It should be noted that this insight is not based on population density in the respective states, but rather just deaths vs cases.
 
 Population at the state level was then added to see how population plays a role in mortality rate.
 
-![screenshots/Confirmed_Cases_by_Date_(Population).png](screenshots/Confirmed_Cases_by_Date_(Population).png)
+![Confirmed Cases with Population](Screenshots/Confirmed_Cases_by_Date_(Population).png)
 
 The map is now colored based on population. The three states mentioned above have a large population, but by no-means are they the most populous states in the country. Texas and California have a greater population. It can then be deduced that it is not population alone is not a good indicator, but rather the density of population within the state. This helps answer the question as to why Texas and California don't have a higher mortality rate. 
 
 The dataset was clustered (using K-Means) to identify which states are related in terms of cases and deaths. The "outliers" are CA, TX, FL, and NY which stand out compared to the other states. The reasoning for this can possibly be due to the population, but it is hard to deduce what other factors contribute with the data presented.
 
-![screenshots/CasesDeaths_w_Clusters.png](screenshots/CasesDeaths_w_Clusters.png)
+![Cases with clustering](Screenshots/CasesDeaths_w_Clusters.png)
 
 Lastly, I tried to do an analysis comparing the number of cases vs. temperature. I had the initial hypothesis inferring that as the temperature rises, so will the COVID cases. This might have been especially true since COVID started making a huge impact at the beginning of the year as we were reaching the middle/end of the winter period. As we changed transitioned into the Spring/Summer season, people are more inclined to go outside and enjoy the weather.
 
-![screenshots/Temperature_vs_Cases.png](screenshots/Temperature_vs_Cases.png)
+![Temperature vs Cases](Screenshots/Temperature_vs_Cases.png)
 
 The illustration shows the distribution of temperature vs cases/death. This graph again states the strong correlation between the number of cases and deaths. The graph also proves the hypothesis stated initially, as the temperature increases more cases arise due to people being more "carefree" and discarding precautions. The peak happens right in the mid 70's which is considered as a perfect temperature by many. There is a drop off that should be noticed if the temperature rises too much. This can be concluded as people staying indoors to avoid the "scorching" temperatures. 
 
